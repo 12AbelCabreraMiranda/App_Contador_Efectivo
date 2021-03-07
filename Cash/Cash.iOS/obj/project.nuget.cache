@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YLGavegz4hnjEa/HbkisuW04DvM82jBrEiGaAXRR0MZFDEsHNLsyIAdtr5mz7KBcrYlisQyxG/F5Mx0jUMYgmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash.iOS\\Cash.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

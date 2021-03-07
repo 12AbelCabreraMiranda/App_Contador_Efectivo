@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cash.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Mi Efectivo!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <!--25 centavos-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="25 Centavos">
+            </Label>
+            <Entry 
+                Placeholder="25 centavos" 
+                x:Name="veintiCincoCentavos"
+                Keyboard="Numeric">
+            </Entry>
+
+            <!--50 centavos-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="50 Centavos">
+            </Label>
+            <Entry 
+                Placeholder="50 centavos" 
+                x:Name="cincuentaCentavos"
+                Keyboard="Numeric">
+            </Entry>
+            <!--1 Quetzal-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="1 Quetzal">
+            </Label>
+            <Entry 
+                Placeholder="1 Quetzal" 
+                x:Name="unQuetzal"
+                Keyboard="Numeric">
+            </Entry>
+            <!--5 Quetzales-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="5 Quetzales">
+            </Label>
+            <Entry 
+                Placeholder="5 Quetzales" 
+                x:Name="cincoQuetzales"
+                Keyboard="Numeric">
+            </Entry>
+
+            <!--10 Quetzales-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="10 Quetzales">
+            </Label>
+            <Entry 
+                Placeholder="10 Quetzales" 
+                x:Name="diezQuetzales"
+                Keyboard="Numeric">
+            </Entry>
+
+            <!--20 Quetzales-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="20 Quetzales">
+            </Label>
+            <Entry 
+                Placeholder="20 Quetzales" 
+                x:Name="veinteQuetzales"
+                Keyboard="Numeric">
+            </Entry>
+            <!--50 Quetzales-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="50 Quetzales">
+            </Label>
+            <Entry 
+                Placeholder="50 Quetzales" 
+                x:Name="cincuentaQuetzales"
+                Keyboard="Numeric">
+            </Entry>
+            <!--100 Quetzales-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="100 Quetzales">
+            </Label>
+            <Entry 
+                Placeholder="100 Quetzales" 
+                x:Name="cienQuetzales"
+                Keyboard="Numeric">
+            </Entry>
+            
+            <!--Resultado-->
+            <Label
+                Margin="0, 10, 0, 0"
+                Text="TOTAL EFECTIVO">
+            </Label>
+            <Entry 
+                TextColor="#0287c4"
+                Placeholder="Resultado efectivo" 
+                x:Name="miEfectivo"
+                IsEnabled="False">
+            </Entry>
+
+            <Button 
+                Text="Calcular" 
+                Clicked="Button_Clicked"    
+                BackgroundColor="#027ea1">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
