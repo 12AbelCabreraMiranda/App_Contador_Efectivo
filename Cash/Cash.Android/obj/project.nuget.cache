@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DG2mx81es1aBn4N3NDf7/R0HtCM29TzSgJSVVEietsKpngNO7CUhpEpECy5MVvhcMHH0ze9wtpSSTikdGYKrhg==",
+  "dgSpecHash": "UbMhYxBQ0fXEvKe+Goag8Ncge3ZWSoZEaHTsmiC0aHK+Mhx7LrQ+14s2qGSsBluB7nvJ4qEjjDJGh6B/kbeYow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash.Android\\Cash.Android.csproj",
+  "projectFilePath": "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash.Android\\Cash.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
@@ -41,7 +41,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.vector.drawable\\28.0.0.3\\xamarin.android.support.vector.drawable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Abel\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
   "logs": []

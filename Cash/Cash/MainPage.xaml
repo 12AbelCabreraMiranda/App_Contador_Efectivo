@@ -9,107 +9,307 @@
                 <Label Text="Mi Efectivo!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
 
-            <!--25 centavos-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="25 Centavos">
-            </Label>
-            <Entry 
-                Placeholder="25 centavos" 
-                x:Name="veintiCincoCentavos"
-                Keyboard="Numeric">
-            </Entry>
+            <Grid
+                Margin="10,10,10,30"
+                RowSpacing="10" 
+                ColumnSpacing="5"
+                HorizontalOptions="CenterAndExpand">
 
-            <!--50 centavos-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="50 Centavos">
-            </Label>
-            <Entry 
-                Placeholder="50 centavos" 
-                x:Name="cincuentaCentavos"
-                Keyboard="Numeric">
-            </Entry>
-            <!--1 Quetzal-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="1 Quetzal">
-            </Label>
-            <Entry 
-                Placeholder="1 Quetzal" 
-                x:Name="unQuetzal"
-                Keyboard="Numeric">
-            </Entry>
-            <!--5 Quetzales-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="5 Quetzales">
-            </Label>
-            <Entry 
-                Placeholder="5 Quetzales" 
-                x:Name="cincoQuetzales"
-                Keyboard="Numeric">
-            </Entry>
+                <!--Row-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!--Column-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <!--10 Quetzales-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="10 Quetzales">
-            </Label>
-            <Entry 
-                Placeholder="10 Quetzales" 
-                x:Name="diezQuetzales"
-                Keyboard="Numeric">
-            </Entry>
+                <!--First row  /Left,Top,Right,Bottom-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="25 Centavos"
+                    Grid.Column="0"/>
+                
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Column="1"/>
+                <Entry  
+                    
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Moneda" 
+                    x:Name="veintiCincoCentavos"
+                    Keyboard="Numeric"
+                    Grid.Column="1">
+                </Entry>
 
-            <!--20 Quetzales-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="20 Quetzales">
-            </Label>
-            <Entry 
-                Placeholder="20 Quetzales" 
-                x:Name="veinteQuetzales"
-                Keyboard="Numeric">
-            </Entry>
-            <!--50 Quetzales-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="50 Quetzales">
-            </Label>
-            <Entry 
-                Placeholder="50 Quetzales" 
-                x:Name="cincuentaQuetzales"
-                Keyboard="Numeric">
-            </Entry>
-            <!--100 Quetzales-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="100 Quetzales">
-            </Label>
-            <Entry 
-                Placeholder="100 Quetzales" 
-                x:Name="cienQuetzales"
-                Keyboard="Numeric">
-            </Entry>
-            
-            <!--Resultado-->
-            <Label
-                Margin="0, 10, 0, 0"
-                Text="TOTAL EFECTIVO">
-            </Label>
-            <Entry 
-                TextColor="#0287c4"
-                Placeholder="Resultado efectivo" 
-                x:Name="miEfectivo"
-                IsEnabled="False">
-            </Entry>
+                <!--Second row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="50 Centavos"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
 
-            <Button 
-                Text="Calcular" 
-                Clicked="Button_Clicked"    
-                BackgroundColor="#027ea1">
-            </Button>
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Moneda" 
+                    x:Name="cincuentaCentavos"
+                    Keyboard="Numeric"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Third row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="1 Quetzal"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Moneda" 
+                    x:Name="unQuetzal"
+                    Keyboard="Numeric"
+                    Grid.Row="2"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Fourth row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="5 Quetzales"
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="3"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Billete" 
+                    x:Name="cincoQuetzales"
+                    Keyboard="Numeric"
+                    Grid.Row="3"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Fifth row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="4"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="10 Quetzales"
+                    Grid.Row="4"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="4"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Billete" 
+                    x:Name="diezQuetzales"
+                    Keyboard="Numeric"
+                    Grid.Row="4"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Sixth row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="5"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="20 Quetzales"
+                    Grid.Row="5"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="5"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Billete" 
+                    x:Name="veinteQuetzales"
+                    Keyboard="Numeric"
+                    Grid.Row="5"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Seventh row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="6"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="50 Quetzales"
+                    Grid.Row="6"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="6"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Billete" 
+                    x:Name="cincuentaQuetzales"
+                    Keyboard="Numeric"
+                    Grid.Row="6"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Eighth row-->
+                <BoxView                     
+                    BackgroundColor="#e8e8e8"                    
+                    CornerRadius="10"
+                    Grid.Row="7"
+                    Grid.Column="0"/>
+                <Label 
+                    FontAttributes="Bold"
+                    Margin="0,10,10,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Text="100 Quetzales"
+                    Grid.Row="7"
+                    Grid.Column="0"/>
+
+                <BoxView 
+                    BackgroundColor="#cfcfcf"
+                    CornerRadius="10"
+                    Grid.Row="7"
+                    Grid.Column="1"/>
+                <Entry 
+                    Margin="10,0,0,0"
+                    FontSize="17"
+                    HorizontalTextAlignment="Start"
+                    Placeholder="Cantidad Billete" 
+                    x:Name="cienQuetzales"
+                    Keyboard="Numeric"
+                    Grid.Row="7"
+                    Grid.Column="1">
+                </Entry>
+
+                <!--Resultado-->
+                <Label
+                    FontSize="17"
+                    HorizontalTextAlignment="End"
+                    Margin="0, 10, 10, 0"
+                    Text="TOTAL EFECTIVO"
+                    Grid.Row="8"
+                    Grid.Column="0">
+                </Label>
+                <Entry 
+                    TextColor="#0287c4"
+                    Placeholder="Resultado efectivo" 
+                    x:Name="miEfectivo"
+                    IsEnabled="False"
+                    Grid.Row="8"
+                    Grid.Column="1">
+                </Entry>
+
+                <Button 
+                    Text="Calcular" 
+                    Clicked="Button_Clicked"    
+                    BackgroundColor="#027ea1"
+                    Grid.Row="9"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center">
+                </Button>
+                
+            </Grid>
+
+            <!--Footer-->
+            <Label
+                FontSize="10"
+                HorizontalTextAlignment="Center"
+                Margin="0,10,0,0"
+                Text="App for iOS and Android / Developed by Abel"/>
+            <Label
+                FontSize="10"
+                HorizontalTextAlignment="Center"
+                Margin="0,0,0,10"
+                Text="07 de Marzo 2021"/>
         </StackLayout>
     </ScrollView>
 

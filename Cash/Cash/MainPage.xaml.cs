@@ -16,7 +16,7 @@ namespace Cash
         }
 
         private void Button_Clicked(object sender, EventArgs e)
-        {
+        {           
             var total25Centavo = double.Parse(veintiCincoCentavos.Text) / 4;
             var total50Centavos = double.Parse(cincuentaCentavos.Text) / 2;
             var totalQuetzal = double.Parse(unQuetzal.Text);
