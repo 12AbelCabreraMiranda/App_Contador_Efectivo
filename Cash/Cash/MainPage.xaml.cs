@@ -13,6 +13,14 @@ namespace Cash
         public MainPage()
         {
             InitializeComponent();
+            veintiCincoCentavos.Text = "0";
+            cincuentaCentavos.Text = "0";
+            unQuetzal.Text = "0";
+            cincoQuetzales.Text = "0";
+            diezQuetzales.Text = "0";
+            veinteQuetzales.Text = "0";
+            cincuentaQuetzales.Text = "0";
+            cienQuetzales.Text = "0";
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -26,6 +34,7 @@ namespace Cash
                !string.IsNullOrEmpty(cincuentaQuetzales.Text) &&
                !string.IsNullOrEmpty(cienQuetzales.Text))
             {
+                
                 var total25Centavo = double.Parse(veintiCincoCentavos.Text) / 4;
                 var total50Centavos = double.Parse(cincuentaCentavos.Text) / 2;
                 var totalQuetzal = double.Parse(unQuetzal.Text);
@@ -34,9 +43,10 @@ namespace Cash
                 var total20Quetzales = double.Parse(veinteQuetzales.Text) * 20;
                 var total50Quetzales = double.Parse(cincuentaQuetzales.Text) * 50;
                 var total100Quetzales = double.Parse(cienQuetzales.Text) * 100;
-
+                
                 double totalEfectivo = total25Centavo + total50Centavos + totalQuetzal + total5Quetzales + total10Quetzales + total20Quetzales + total50Quetzales + total100Quetzales;
                 miEfectivo.Text = totalEfectivo.ToString();
+                
             }
             else
             {
