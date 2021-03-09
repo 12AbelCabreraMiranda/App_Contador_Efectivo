@@ -294,8 +294,17 @@
                     Clicked="Button_Clicked"    
                     BackgroundColor="#027ea1"
                     Grid.Row="9"
-                    Grid.ColumnSpan="2"
-                    HorizontalOptions="Center">
+                    Grid.Column="0"
+                    HorizontalOptions="End">
+                </Button>
+                <Button                      
+                    Clicked="BtnLimpiar_Clicked"
+                    CornerRadius="5"
+                    Text="Limpiar"                     
+                    BackgroundColor="#6a8267"
+                    Grid.Row="9"
+                    Grid.Column="1"
+                    HorizontalOptions="Start">
                 </Button>
                 
             </Grid>

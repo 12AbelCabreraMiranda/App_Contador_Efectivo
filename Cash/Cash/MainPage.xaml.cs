@@ -49,11 +49,35 @@ namespace Cash
                     //DisplayAlert("Número inválido: ", "Las cantidades deben ser positivos", "Ok");
                     if (e25Cent < 0)
                     {
-                        DisplayAlert("Número negativo: "+ e25Cent, "Las cantidades deben ser positivos", "Ok");
+                        DisplayAlert("Cantidad 25 Centavos: "+ e25Cent, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e50Cent < 0)
+                    {
+                        DisplayAlert("Cantidad 50 Centavos: " + e50Cent, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e1Quetzal < 0)
+                    {
+                        DisplayAlert("Cantidad 1 Quetzal: " + e1Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e5Quetzal < 0)
                     {
-                        DisplayAlert("Número negativo: " + e5Quetzal, "Las cantidades deben ser positivos", "Ok");
+                        DisplayAlert("Cantidad 5 Quetzales: " + e5Quetzal, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e10Quetzal < 0)
+                    {
+                        DisplayAlert("Cantidad 10 Quetzales: " + e10Quetzal, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e20Quetzal < 0)
+                    {
+                        DisplayAlert("Cantidad 20 Quetzales: " + e20Quetzal, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e50Quetzal < 0)
+                    {
+                        DisplayAlert("Cantidad 50 Quetzales: " + e50Quetzal, "El valor debe ser positivo", "Ok");
+                    }
+                    if (e100Quetzal < 0)
+                    {
+                        DisplayAlert("Cantidad 100 Quetzales: " + e100Quetzal, "El valor debe ser positivo", "Ok");
                     }
                 }
                 else
@@ -80,6 +104,21 @@ namespace Cash
 
 
 
+        }
+
+        private void BtnLimpiar_Clicked(object sender, EventArgs e)
+        {
+            //Inicialización de campos en cero
+            veintiCincoCentavos.Text = "0";
+            cincuentaCentavos.Text = "0";
+            unQuetzal.Text = "0";
+            cincoQuetzales.Text = "0";
+            diezQuetzales.Text = "0";
+            veinteQuetzales.Text = "0";
+            cincuentaQuetzales.Text = "0";
+            cienQuetzales.Text = "0";
+
+            miEfectivo.Text = "0";
         }
     }
 }
