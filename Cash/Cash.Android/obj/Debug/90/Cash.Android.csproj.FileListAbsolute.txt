@@ -982,3 +982,4 @@ C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Ca
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\android\src\crc646d00153da12d95cc\SplashActivity.java
