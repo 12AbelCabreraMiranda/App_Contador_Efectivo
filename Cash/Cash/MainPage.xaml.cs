@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cash.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace Cash
             cienQuetzales.Text = "0";
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
 
 
@@ -51,35 +52,35 @@ namespace Cash
                     //DisplayAlert("Número inválido: ", "Las cantidades deben ser positivos", "Ok");
                     if (e25Cent < 0)
                     {
-                        DisplayAlert("Cantidad 25 Centavos: "+ e25Cent, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 25 Centavos: "+ e25Cent, "El valor debe ser positivo", "Ok");
                     }
                     if (e50Cent < 0)
                     {
-                        DisplayAlert("Cantidad 50 Centavos: " + e50Cent, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 50 Centavos: " + e50Cent, "El valor debe ser positivo", "Ok");
                     }
                     if (e1Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 1 Quetzal: " + e1Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 1 Quetzal: " + e1Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e5Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 5 Quetzales: " + e5Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 5 Quetzales: " + e5Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e10Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 10 Quetzales: " + e10Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 10 Quetzales: " + e10Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e20Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 20 Quetzales: " + e20Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 20 Quetzales: " + e20Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e50Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 50 Quetzales: " + e50Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 50 Quetzales: " + e50Quetzal, "El valor debe ser positivo", "Ok");
                     }
                     if (e100Quetzal < 0)
                     {
-                        DisplayAlert("Cantidad 100 Quetzales: " + e100Quetzal, "El valor debe ser positivo", "Ok");
+                        await DisplayAlert("Cantidad 100 Quetzales: " + e100Quetzal, "El valor debe ser positivo", "Ok");
                     }
                 }
                 else
@@ -96,12 +97,22 @@ namespace Cash
                 
                     double totalEfectivo = total25Centavo + total50Centavos + totalQuetzal + total5Quetzales + total10Quetzales + total20Quetzales + total50Quetzales + total100Quetzales;
                     miEfectivo.Text = totalEfectivo.ToString();
+
+                    //Guarda registro en la Base de Datos Local
+                    DateTime fecha = DateTime.UtcNow;
+                    var item = new CashItem
+                    {
+                        TotalEfectivoMes = int.Parse(miEfectivo.Text),
+                        FechaRegistrado = fecha
+                    };
+
+                    await App.Context.InsertItemAsync(item);
                 }
 
             }
             else
             {
-                DisplayAlert("Hay campos vacíos", "Los campos que no utiliza, dejarlo en cero", "Ok");
+                await DisplayAlert("Hay campos vacíos", "Los campos que no utiliza, dejarlo en cero", "Ok");
             }
 
 

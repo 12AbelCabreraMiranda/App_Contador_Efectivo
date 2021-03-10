@@ -5,7 +5,7 @@
 
     <ScrollView>
         <StackLayout>
-            <Frame BackgroundColor="#ffe291" Padding="15">
+            <Frame BackgroundColor="#ffe291" Padding="10">
                 <Label 
                     Text="Mi Efectivo" 
                     HorizontalTextAlignment="Center" 
@@ -14,8 +14,8 @@
             </Frame>
 
             <Grid
-                Margin="10,10,10,30"
-                RowSpacing="10" 
+                Margin="10,08,10,30"
+                RowSpacing="8" 
                 ColumnSpacing="5"
                 HorizontalOptions="CenterAndExpand">
 
