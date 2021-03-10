@@ -9,11 +9,12 @@ namespace Cash
     public partial class App : Application
     {
         public static DataBaseContext Context { get; set; }
+        public static MasterDetailPage MasterDet { get; set; }
         public App()
         {
             InitializeComponent();
             InitializeDataBase();
-            MainPage = new MasterDetailPage1();
+            MainPage = new MenuPage();
         }
         //Configuracion de Base de datos locales
         private void InitializeDataBase()

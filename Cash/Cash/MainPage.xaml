@@ -1,20 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Cash.MainPage">
+             x:Class="Cash.MainPage"             
+             Title="Efectivo">
 
     <ScrollView>
         <StackLayout>
-            <Frame BackgroundColor="#ffe291" Padding="10">
-                <Label 
-                    Text="Mi Efectivo" 
-                    HorizontalTextAlignment="Center" 
-                    TextColor="#292828" 
-                    FontSize="24"/>
-            </Frame>
+            
 
             <Grid
-                Margin="10,08,10,30"
+                Margin="10,15,10,30"
                 RowSpacing="8" 
                 ColumnSpacing="5"
                 HorizontalOptions="CenterAndExpand">

@@ -1,21 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Cash.Views.Historial">
+             x:Class="Cash.Views.Historial"
+             Title="Historial de Efectivo">
 
     <ContentPage.Content>
+                
         <ListView x:Name="lista_tareas" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout 
+                            HorizontalOptions="CenterAndExpand"
                             Padding="15,0">
-                            <Label 
-                                Text="{Binding TotalEfectivoMes}"
-                                FontSize="Medium" 
-                                TextColor="Black"/>
-                            <Label
-                                Text="{Binding FechaRegistrado}"/>
+                            
+                            <Grid
+                                Margin="10,08,10,10"
+                                RowSpacing="8" 
+                                ColumnSpacing="5"
+                                HorizontalOptions="CenterAndExpand">
+
+                                <!--Row-->
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <!--Column-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    FontSize="20"
+                                    HorizontalOptions="End"
+                                    Grid.Column="0"
+                                    Text="Q."/>
+                                <Label
+                                    FontSize="20"
+                                    Grid.Column="1"
+                                    Text="{Binding TotalEfectivoMes}"
+                                                                    
+                                    TextColor="Black"/>
+                                <Label
+                                    FontSize="20"
+                                    Grid.Column="1"
+                                    Margin="0,25,0,0"
+                                    Text="{Binding FechaRegistrado}"/>
+
+                            </Grid>
+
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

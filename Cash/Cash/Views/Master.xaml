@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cash.Views.Master"
+             Title="Master">
+    <ContentPage.Content>
+        
+        
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout BackgroundColor="#bf9d04"
+                     HeightRequest="120">
+
+                <Label Text="Aplicacion Contador de Efectivo"
+                 FontSize="20"
+                 VerticalOptions="CenterAndExpand"
+                 TextColor="White"
+                 HorizontalOptions="Center"/>
+            </StackLayout>
+            
+            <Button                    
+                Text="Historial"
+                x:Name="BtnHistorial"
+                BackgroundColor="White"
+                Clicked="BtnHistorial_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
