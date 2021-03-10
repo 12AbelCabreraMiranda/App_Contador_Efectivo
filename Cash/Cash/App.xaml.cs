@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Cash.Data;
+using Cash.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,13 +8,20 @@ namespace Cash
 {
     public partial class App : Application
     {
+        public static DataBaseContext Context { get; set; }
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            InitializeDataBase();
+            MainPage = new MasterDetailPage1();
         }
-
+        //Configuracion de Base de datos locales
+        private void InitializeDataBase()
+        {
+            var folderApp = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            var dbPath = System.IO.Path.Combine(folderApp, "ToDo.db3");
+            Context = new DataBaseContext(dbPath);
+        }
         protected override void OnStart()
         {
         }
