@@ -5,31 +5,34 @@
              Title="Historial de Efectivo">
 
     <ContentPage.Content>
-                
-        <ListView x:Name="lista_tareas" HasUnevenRows="True">
+        <!--SelectionMode="None" : quita el color de fondo al seleccionar un item-->
+        <ListView               
+            SelectionMode="None" 
+            x:Name="lista_tareas" 
+            HasUnevenRows="True">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate >
                     <ViewCell>
                         <ViewCell.ContextActions>
                             <MenuItem
-                                Clicked="BtnDelete_Clicked"
-                                CommandParameter="{Binding .}"
-                                Text="Eliminar"
-                                IsDestructive="True"
-                                x:Name="BtnDelete">
+                            Clicked="BtnDelete_Clicked"
+                            CommandParameter="{Binding .}"
+                            Text="Eliminar"
+                            IsDestructive="True"
+                            x:Name="BtnDelete">
 
                             </MenuItem>
                         </ViewCell.ContextActions>
-                        
+
                         <StackLayout 
-                            HorizontalOptions="CenterAndExpand"
-                            Padding="15,0">
-                            
+                        HorizontalOptions="CenterAndExpand"
+                        Padding="15,0">
+
                             <Grid
-                                Margin="10,08,10,10"
-                                RowSpacing="8" 
-                                ColumnSpacing="5"
-                                HorizontalOptions="CenterAndExpand">
+                            Margin="10,08,10,10"
+                            RowSpacing="8" 
+                            ColumnSpacing="5"
+                            HorizontalOptions="CenterAndExpand">
 
                                 <!--Row-->
                                 <Grid.RowDefinitions>
@@ -42,27 +45,28 @@
                                 </Grid.ColumnDefinitions>
 
                                 <Label
-                                    TextColor="Black"
-                                    FontSize="20"
-                                    HorizontalOptions="End"
-                                    Grid.Column="0"
-                                    Text="Q."/>
+                                TextColor="Black"
+                                FontSize="20"
+                                HorizontalOptions="End"
+                                Grid.Column="0"
+                                Text="Q."/>
                                 <Label
-                                    FontSize="20"
-                                    Grid.Column="1"
-                                    Text="{Binding TotalEfectivoMes}"
+                                FontSize="20"
+                                Grid.Column="1"
+                                Text="{Binding TotalEfectivoMes} "
                                                                     
-                                    TextColor="Black"/>
+                                TextColor="Black"/>
                                 <Label
-                                    FontSize="20"
-                                    Grid.Column="1"
-                                    Margin="0,25,0,0"
-                                    Text="{Binding FechaRegistrado}"/>
+                                FontSize="20"
+                                Grid.Column="1"
+                                Margin="0,25,0,0"
+                                Text="{Binding FechaRegistrado}"/>
 
                             </Grid>
 
                         </StackLayout>
                     </ViewCell>
+                    
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
