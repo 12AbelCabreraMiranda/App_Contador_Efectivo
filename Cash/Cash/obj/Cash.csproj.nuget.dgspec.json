@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash\\Cash.csproj": {}
+    "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash\\Cash.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash\\Cash.csproj": {
+    "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash\\Cash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash\\Cash.csproj",
+        "projectUniqueName": "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash\\Cash.csproj",
         "projectName": "Cash",
-        "projectPath": "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash\\Cash.csproj",
-        "packagesPath": "C:\\Users\\Abel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abel\\Documents\\Visual Studio 2019\\XamarinForms\\App_Contador_Efectivo\\Cash\\Cash\\obj\\",
+        "projectPath": "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash\\Cash.csproj",
+        "packagesPath": "C:\\Users\\cabre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cabre\\Documents\\Visual Studio 2019\\Xamarin\\Cash\\Cash\\Cash\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cabre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -73,7 +73,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
