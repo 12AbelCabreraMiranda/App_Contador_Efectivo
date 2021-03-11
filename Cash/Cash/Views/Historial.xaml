@@ -10,6 +10,17 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem
+                                Clicked="BtnDelete_Clicked"
+                                CommandParameter="{Binding .}"
+                                Text="Eliminar"
+                                IsDestructive="True"
+                                x:Name="BtnDelete">
+
+                            </MenuItem>
+                        </ViewCell.ContextActions>
+                        
                         <StackLayout 
                             HorizontalOptions="CenterAndExpand"
                             Padding="15,0">

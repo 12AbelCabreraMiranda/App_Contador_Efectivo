@@ -26,5 +26,11 @@ namespace Cash.Data
         {
             return await Connection.Table<CashItem>().ToListAsync();
         }
+        //Method delete
+        public async Task<int> DeleteItemAzync(CashItem item)
+        {
+            return await Connection.DeleteAsync(item);
+        }
+
     }
 }
