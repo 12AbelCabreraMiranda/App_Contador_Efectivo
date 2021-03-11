@@ -519,16 +519,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Ca
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\values\colors.xml
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-hdpi\icon.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-hdpi\launcher_foreground.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-mdpi\icon.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-mdpi\launcher_foreground.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xhdpi\icon.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xhdpi\launcher_foreground.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxhdpi\icon.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\uploadflags.txt
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\android\assets\Cash.Android.dll
@@ -998,3 +988,9 @@ C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Ca
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\android\assets\System.Buffers.dll
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\android\assets\System.Memory.dll
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-hdpi\ic_launcher.png
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-ldpi\ic_launcher.png
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-mdpi\ic_launcher.png
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xhdpi\ic_launcher.png
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxhdpi\ic_launcher.png
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash.Android\obj\Debug\90\res\mipmap-xxxhdpi\ic_launcher.png

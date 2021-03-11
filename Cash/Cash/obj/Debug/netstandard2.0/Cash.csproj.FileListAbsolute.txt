@@ -16,7 +16,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Ca
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\bin\Debug\netstandard2.0\Cash.dll
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\bin\Debug\netstandard2.0\ref\Cash.dll
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\bin\Debug\netstandard2.0\Cash.pdb
-C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\Cash.csprojAssemblyReference.cache
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\Cash.AssemblyInfoInputs.cache
