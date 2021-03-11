@@ -102,7 +102,7 @@ namespace Cash
                     DateTime fecha = DateTime.Now;
                     var item = new CashItem
                     {
-                        TotalEfectivoMes = int.Parse(miEfectivo.Text),
+                        TotalEfectivoMes = double.Parse(miEfectivo.Text),
                         FechaRegistrado = fecha
                     };
 
