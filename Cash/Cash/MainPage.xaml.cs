@@ -101,7 +101,7 @@ namespace Cash
                     //Guarda registro en la Base de Datos Local
                     
                     //DateTime fecha = DateTime.Now;
-                    var fecha = DateTime.Now.ToString("dd-MM-yyyy");
+                    var fecha = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
 
 
                     var item = new CashItem
