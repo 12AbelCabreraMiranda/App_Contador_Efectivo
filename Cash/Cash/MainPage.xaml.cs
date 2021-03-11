@@ -99,7 +99,11 @@ namespace Cash
                     miEfectivo.Text = totalEfectivo.ToString();
 
                     //Guarda registro en la Base de Datos Local
-                    DateTime fecha = DateTime.Now;
+                    
+                    //DateTime fecha = DateTime.Now;
+                    var fecha = DateTime.Now.ToString("dd-MM-yyyy");
+
+
                     var item = new CashItem
                     {
                         TotalEfectivoMes = double.Parse(miEfectivo.Text),

@@ -10,6 +10,6 @@ namespace Cash.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public double TotalEfectivoMes { get; set; }
-        public DateTime FechaRegistrado { get; set; }
+        public string FechaRegistrado { get; set; }
     }
 }

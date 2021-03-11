@@ -42,6 +42,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <Label
+                                    TextColor="Black"
                                     FontSize="20"
                                     HorizontalOptions="End"
                                     Grid.Column="0"
