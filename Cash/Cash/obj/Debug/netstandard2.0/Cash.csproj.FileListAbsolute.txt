@@ -31,3 +31,4 @@ C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Ca
 C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
 C:\Users\cabre\Documents\Visual Studio 2019\Xamarin\Cash\Cash\Cash\obj\Debug\netstandard2.0\Views\Master.xaml.g.cs
 C:\Users\cabre\Documents\Visual Studio 2019\Xamarin\Cash\Cash\Cash\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\Abel\Documents\Visual Studio 2019\XamarinForms\App_Contador_Efectivo\Cash\Cash\obj\Debug\netstandard2.0\Cash.csprojAssemblyReference.cache

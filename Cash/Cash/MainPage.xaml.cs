@@ -25,10 +25,9 @@ namespace Cash
             cienQuetzales.Text = "0";
         }
 
+        //Calcula los registros de los campos
         private async void Button_Clicked(object sender, EventArgs e)
         {
-
-
             if (!string.IsNullOrEmpty(veintiCincoCentavos.Text) &&
                !string.IsNullOrEmpty(cincuentaCentavos.Text) &&
                !string.IsNullOrEmpty(unQuetzal.Text) &&
@@ -85,7 +84,6 @@ namespace Cash
                 }
                 else
                 {
-
                     var total25Centavo = double.Parse(veintiCincoCentavos.Text) / 4;
                     var total50Centavos = double.Parse(cincuentaCentavos.Text) / 2;
                     var totalQuetzal = double.Parse(unQuetzal.Text);
@@ -96,33 +94,45 @@ namespace Cash
                     var total100Quetzales = double.Parse(cienQuetzales.Text) * 100;
                 
                     double totalEfectivo = total25Centavo + total50Centavos + totalQuetzal + total5Quetzales + total10Quetzales + total20Quetzales + total50Quetzales + total100Quetzales;
-                    miEfectivo.Text = totalEfectivo.ToString();
-
-                    //Guarda registro en la Base de Datos Local
-                    
-                    //DateTime fecha = DateTime.Now;
-                    var fecha = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
-
-
-                    var item = new CashItem
-                    {
-                        TotalEfectivoMes = double.Parse(miEfectivo.Text),
-                        FechaRegistrado = fecha
-                    };
-
-                    await App.Context.InsertItemAsync(item);
+                    miEfectivo.Text = totalEfectivo.ToString();                    
                 }
-
             }
             else
             {
                 await DisplayAlert("Hay campos vacíos", "Los campos que no utiliza, dejarlo en cero", "Ok");
             }
-
-
-
         }
 
+        //Guarda en Historial
+        private async void BtnGuardar_Clicked(object sender, EventArgs e)
+        {
+            //Guarda registro en la Base de Datos Local
+
+            //DateTime fecha = DateTime.Now;
+            var fecha = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
+
+            var item = new CashItem
+            {
+                TotalEfectivoMes = double.Parse(miEfectivo.Text),
+                FechaRegistrado = fecha
+            };
+            await App.Context.InsertItemAsync(item);
+
+            //Inicialización de campos en cero
+            veintiCincoCentavos.Text = "0";
+            cincuentaCentavos.Text = "0";
+            unQuetzal.Text = "0";
+            cincoQuetzales.Text = "0";
+            diezQuetzales.Text = "0";
+            veinteQuetzales.Text = "0";
+            cincuentaQuetzales.Text = "0";
+            cienQuetzales.Text = "0";
+
+            miEfectivo.Text = "0";
+            //Mensage de registro almacenado
+            await DisplayAlert("Registrado", "Total Efectivo guardado en historial", "Ok");
+        }
+        //Limpia los campos
         private void BtnLimpiar_Clicked(object sender, EventArgs e)
         {
             //Inicialización de campos en cero
@@ -136,6 +146,6 @@ namespace Cash
             cienQuetzales.Text = "0";
 
             miEfectivo.Text = "0";
-        }
+        }                
     }
 }
