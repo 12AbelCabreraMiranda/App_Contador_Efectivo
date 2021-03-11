@@ -23,6 +23,8 @@ namespace Cash
             veinteQuetzales.Text = "0";
             cincuentaQuetzales.Text = "0";
             cienQuetzales.Text = "0";
+
+            miEfectivo.Text = "0";
         }
 
         //Calcula los registros de los campos
@@ -111,26 +113,35 @@ namespace Cash
             //DateTime fecha = DateTime.Now;
             var fecha = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt");
 
-            var item = new CashItem
+            var totalCash=double.Parse(miEfectivo.Text);
+            if (totalCash <= 0)
             {
-                TotalEfectivoMes = double.Parse(miEfectivo.Text),
-                FechaRegistrado = fecha
-            };
-            await App.Context.InsertItemAsync(item);
+                await DisplayAlert("Campos vacíos", "Agregue sus cantidades para realizar su operación", "Ok");
+            }
+            else
+            {
+                var item = new CashItem
+                {
+                    TotalEfectivoMes = double.Parse(miEfectivo.Text),
+                    FechaRegistrado = fecha
+                };
+                await App.Context.InsertItemAsync(item);
 
-            //Inicialización de campos en cero
-            veintiCincoCentavos.Text = "0";
-            cincuentaCentavos.Text = "0";
-            unQuetzal.Text = "0";
-            cincoQuetzales.Text = "0";
-            diezQuetzales.Text = "0";
-            veinteQuetzales.Text = "0";
-            cincuentaQuetzales.Text = "0";
-            cienQuetzales.Text = "0";
+                //Inicialización de campos en cero
+                veintiCincoCentavos.Text = "0";
+                cincuentaCentavos.Text = "0";
+                unQuetzal.Text = "0";
+                cincoQuetzales.Text = "0";
+                diezQuetzales.Text = "0";
+                veinteQuetzales.Text = "0";
+                cincuentaQuetzales.Text = "0";
+                cienQuetzales.Text = "0";
 
-            miEfectivo.Text = "0";
-            //Mensage de registro almacenado
-            await DisplayAlert("Registrado", "Total Efectivo guardado en historial", "Ok");
+                miEfectivo.Text = "0";
+                //Mensage de registro almacenado
+                await DisplayAlert("Registrado", "Total Efectivo guardado en historial", "Ok");
+            }
+
         }
         //Limpia los campos
         private void BtnLimpiar_Clicked(object sender, EventArgs e)

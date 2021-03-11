@@ -5,7 +5,9 @@
              Title="Efectivo">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem            
+        <ToolbarItem 
+            
+            x:Name="BtnGuardar"
             Text="Guardar"
             Clicked="BtnGuardar_Clicked">
         </ToolbarItem>
